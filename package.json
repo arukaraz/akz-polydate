@@ -1,0 +1,36 @@
+{
+  "name": "akz-polydate",
+  "version": "1.0.0",
+  "description": "A tool that converts a date from one language to another, with options for formatting and ISO string output.",
+  "homepage": "https://github.com/arukaraz/akz-polydate",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/akz-polydate.umd.js",
+  "module": "./dist/akz-polydate.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/akz-polydate.es.js",
+      "require": "./dist/akz-polydate.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arukaraz/akz-polydate.git"
+  },
+  "author": "arukaraz",
+  "bugs": {
+    "url": "https://github.com/arukaraz/akz-polydate/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "vite": "^4.4.11"
+  }
+}
